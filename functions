@@ -1,7 +1,24 @@
+// варіант функції для перерівки значення
 function checkAge (age) {
   return (age>25) ? true : confirm ('Are you sure?');
 }
 
+// варіант функції для перерівки значення
 function checkAge (age) {
   return (age>25) || confirm ('Are you sure?');
 }
+
+// функція піднесення до степеня
+function calcN (x, n) 
+  {
+			var i=1;
+			var res=x;
+			for (i=1; i<n; i++)
+			{
+				res = x*x;
+			}
+			return res;
+		}
+var x = prompt('введіть х', '');
+var n = prompt('введіть n', '');
+window.alert( calcN(x, n) );
