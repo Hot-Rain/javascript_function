@@ -1,0 +1,7 @@
+function checkAge (age) {
+  return (age>25) ? true : confirm ('Are you sure?');
+}
+
+function checkAge (age) {
+  return (age>25) || confirm ('Are you sure?');
+}
