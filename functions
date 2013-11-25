@@ -33,10 +33,23 @@ function Sum (N) {
 	}
 	return rez;
 }
-window.alert ( Sum(3) );
-	// рекурсією
+window.alert ( Sum(4) );
+	// рекурсією. замінивши додавання на множення, обраховуєм факторіал N
 functoin Sum(N) {
 	return (N>1) ? N=N+Sum(N-1) : N;
 }
-window.alert ( Sum(3) );
+window.alert ( Sum(4) );
 
+//функція обрахунку числа Фібоначчі
+function Fib (f) {
+	var i=1;
+	var j=0;
+	var n=0;
+	for (n=0; n<f; n++) {
+		rez=i+j;
+		i=j;
+		j=rez;
+	}
+	return rez;
+}
+window.alert ( Fib(8) );
