@@ -22,3 +22,21 @@ function calcN (x, n)
 var x = prompt('введіть х', '');
 var n = prompt('введіть n', '');
 window.alert( calcN(x, n) );
+
+//функція обрахунку суми від 1 до N для заданого N
+	//циклом
+function Sum (N) {
+	var i=1;
+	var rez=0;
+	for (i=1; i<N+1; i++){
+		rez=rez+i;
+	}
+	return rez;
+}
+window.alert ( Sum(3) );
+	// рекурсією
+functoin Sum(N) {
+	return (N>1) ? N=N+Sum(N-1) : N;
+}
+window.alert ( Sum(3) );
+
