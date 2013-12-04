@@ -66,3 +66,24 @@ function symbolFirst (str) {
 str = ""; // виведе 'Рядок не вказано'
 // str = "dana"; виведе "D"
 symbolFirst (str);
+
+// функція виводу рядка в нижньому регістрі окрім першого символу + перевірка введення рядка
+function newStr (str) {
+	var newStr;
+	var long;
+	var i;
+	
+	if (str == ""){
+		alert ("Рядок не введено");
+	}
+	else{
+		long = str.length;
+		newStr = str.charAt(0).toUpperCase();
+		for (i=1; i<long; i++) {
+			newStr = newStr + str.charAt(i).toLowerCase();
+		}
+	}
+	alert (newStr);
+}
+str = "dAnA";
+newStr (str);
