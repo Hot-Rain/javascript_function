@@ -53,3 +53,16 @@ function Fib (f) {
 	return rez;
 }
 window.alert ( Fib(8) );
+
+//функція виводу першого символа рядка у верхньому регістрі + повідомлення якщо рядок пустий
+function symbolFirst (str) {
+	if (str == "") {
+		alert ('Рядок не вказано');
+	}
+	else{
+		alert (str.charAt(0).toUpperCase(0));
+	}
+}
+str = ""; // виведе 'Рядок не вказано'
+// str = "dana"; виведе "D"
+symbolFirst (str);
