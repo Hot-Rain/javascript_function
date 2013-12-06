@@ -87,3 +87,23 @@ function newStr (str) {
 }
 str = "dAnA";
 newStr (str);
+
+//функція виводу всього рядка з першим символом у верхньому регістрі
+function newStr (str) {
+	str = str.charAt(0).toUpperCase + str.substring(1);
+	alert (str);
+}
+srt = "dana";
+newStr (str);
+
+//функція виводить true, якщо в рядку міститься певне слово (не чутлиіва до регістру)
+function SearchStr (str) {
+	if (str.toLowerCase().indexOf("value") > -1) {
+		alert ("true");
+	}
+	else {
+		alert ("false");
+	}
+}
+str = ("VALUE good"); // true
+SearchStr (str);
