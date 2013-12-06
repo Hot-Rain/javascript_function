@@ -107,3 +107,19 @@ function SearchStr (str) {
 }
 str = ("VALUE good"); // true
 SearchStr (str);
+
+
+//функція скорочує занадто довге повідомлення,заміняючи кінець двома крапками
+function ChangeMassage (str, maxlength) {
+	if (str.length < maxlength) {
+		alert (str);
+	}
+	else {
+		alert ( str.slice (0, maxlength-1) + ".." )
+	}
+}
+
+var str = "";
+var maxlength = 10;
+
+massage (str, maxlength);
