@@ -154,3 +154,8 @@ if (isNaN(x)) {
 else {
 	alert (x);
 }
+
+
+//вивід дробової частини числа
+var num = 6.25
+alert (num - Math.floor(num));  // 0.25
