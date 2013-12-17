@@ -159,3 +159,25 @@ else {
 //вивід дробової частини числа
 var num = 6.25
 alert (num - Math.floor(num));  // 0.25
+
+
+//створення об'єкту масив, зміни в числових значеннях елементів, вивід.
+function isNumber (n) {
+	return !isNaN (parseFloat(n)) && isFinite (n);	
+}
+		
+		/*альтернативне оголошення об'єкта
+		var my_menu = new Object ();
+		my_menu.height = 100;
+		my_menu.width = 200;
+		my_menu.title = "Menu";*/
+		
+var my_menu = {height:100, width:200, title:"Menu"};
+var key;
+		
+for (key in my_menu) {
+	if ( isNumber(my_menu[key]) ) {
+		my_menu[key] = my_menu[key] * 2;	
+	}
+	document.write (key + ":\n" + my_menu[key] + ";\n" );
+}
